@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <title>笑増Body パーソナルジム＆ストレッチ</title>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       font-family: sans-serif;
       text-align: center;
@@ -17,33 +14,22 @@
       color: #0066cc;
     }
     .button {
+      display: inline-block;
       padding: 12px 24px;
       font-size: 16px;
+      color: white;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin: 10px;
+      text-decoration: none;
     }
     .line-button {
-      background-color: #06C755;
-      color: white;
+      background-color: #06C755; /* LINEカラー */
     }
-    .button-container {
-      margin-bottom: 40px;
-    }
-    .section-title {
-      font-size: 20px;
-      color: #333;
-      margin-top: 50px;
-    }
-    .link-image {
-      width: 200px;
-      height: auto;
-      margin: 20px auto;
-      cursor: pointer;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    .price-button {
+      background-color: #FF9933; /* 見やすいオレンジ */
     }
   </style>
 </head>
@@ -53,36 +39,15 @@
   <p>Smile Up Body</p>
 
   <!-- LINE予約ボタン -->
-  <div class="button-container">
-    <a href="https://lin.ee/6D1a2RQ" target="_blank" rel="noopener">
-      <button class="button line-button">予約はこちら（LINEへ）</button>
-    </a>
-  </div>
-
-  <!-- 「料金」画像でジャンプ -->
-  <a href="#ryokin">
-    <img src="https://example.com/ryokin-button-image.jpg" alt="料金はこちら" class="link-image">
+  <a href="https://lin.ee/6D1a2RQ" target="_blank" rel="noopener" class="button line-button">
+    予約はこちら（LINEへ）
   </a>
 
-  <!-- スタジオ紹介埋め込み -->
-  <div class="section-title">スタジオ紹介</div>
-  <div style="position: relative; width: 100%; height: 0; padding-top: 168.6676%;
-    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-    border-radius: 8px; will-change: transform;">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-      src="https://www.canva.com/design/DAGotmIdP6w/153cGiLeeRL-FYM_-EMv9g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
-
-  <!-- 料金表埋め込み（アンカー付き） -->
-  <div id="ryokin" class="section-title">料金表</div>
-  <div style="position: relative; width: 100%; height: 0; padding-top: 70.7071%;
-    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-    border-radius: 8px; will-change: transform;">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-      src="https://www.canva.com/design/DAFvnHVq4yc/QjUmz_2zrp6zAiwW3k7cfw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
+  <!-- 料金表ボタン -->
+  <a href="https://www.canva.com/design/DAFvnHVq4yc/QjUmz_2zrp6zAiwW3k7cfw/view?utm_content=DAFvnHVq4yc&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
+     target="_blank" rel="noopener" class="button price-button">
+    料金表はこちら
+  </a>
 
 </body>
 </html>
