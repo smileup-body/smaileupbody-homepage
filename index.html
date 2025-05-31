@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>笑増Body パーソナルジム＆ストレッチ</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: sans-serif;
       text-align: center;
@@ -34,6 +37,14 @@
       color: #333;
       margin-top: 50px;
     }
+    .link-image {
+      width: 200px;
+      height: auto;
+      margin: 20px auto;
+      cursor: pointer;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
@@ -41,14 +52,19 @@
   <h1>笑増Body パーソナルジム＆ストレッチ</h1>
   <p>Smile Up Body</p>
 
-  <!-- ボタン -->
+  <!-- LINE予約ボタン -->
   <div class="button-container">
     <a href="https://lin.ee/6D1a2RQ" target="_blank" rel="noopener">
       <button class="button line-button">予約はこちら（LINEへ）</button>
     </a>
   </div>
 
-  <!-- ホームページ埋め込み -->
+  <!-- 「料金」画像でジャンプ -->
+  <a href="#ryokin">
+    <img src="https://example.com/ryokin-button-image.jpg" alt="料金はこちら" class="link-image">
+  </a>
+
+  <!-- スタジオ紹介埋め込み -->
   <div class="section-title">スタジオ紹介</div>
   <div style="position: relative; width: 100%; height: 0; padding-top: 168.6676%;
     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -58,8 +74,8 @@
     </iframe>
   </div>
 
-  <!-- 料金表埋め込み -->
-  <div class="section-title">料金表</div>
+  <!-- 料金表埋め込み（アンカー付き） -->
+  <div id="ryokin" class="section-title">料金表</div>
   <div style="position: relative; width: 100%; height: 0; padding-top: 70.7071%;
     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
     border-radius: 8px; will-change: transform;">
