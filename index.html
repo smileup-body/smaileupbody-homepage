@@ -26,10 +26,17 @@
       text-decoration: none;
     }
     .line-button {
-      background-color: #06C755; /* LINEカラー */
+      background-color: #06C755;
     }
     .price-button {
-      background-color: #FF9933; /* 見やすいオレンジ */
+      background-color: #FF9933;
+    }
+    .main-image {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
     }
   </style>
 </head>
@@ -38,16 +45,19 @@
   <h1>笑増Body パーソナルジム＆ストレッチ</h1>
   <p>Smile Up Body</p>
 
-  <!-- LINE予約ボタン -->
-  <a href="https://lin.ee/6D1a2RQ" target="_blank" rel="noopener" class="button line-button">
-    予約はこちら（LINEへ）
-  </a>
+  <!-- 画像表示エリア（画像URLは適宜変更してください） -->
+  <img src="https://example.com/your-image.jpg" alt="店舗の写真" class="main-image">
 
-  <!-- 料金表ボタン -->
-  <a href="https://www.canva.com/design/DAFvnHVq4yc/QjUmz_2zrp6zAiwW3k7cfw/view?utm_content=DAFvnHVq4yc&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
-     target="_blank" rel="noopener" class="button price-button">
-    料金表はこちら
-  </a>
+  <!-- ボタン -->
+  <div>
+    <a href="https://lin.ee/6D1a2RQ" target="_blank" rel="noopener" class="button line-button">
+      予約はこちら（LINEへ）
+    </a>
+    <a href="https://www.canva.com/design/DAFvnHVq4yc/QjUmz_2zrp6zAiwW3k7cfw/view?utm_content=DAFvnHVq4yc&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
+       target="_blank" rel="noopener" class="button price-button">
+      料金表はこちら
+    </a>
+  </div>
 
 </body>
 </html>
